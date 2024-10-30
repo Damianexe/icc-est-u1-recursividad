@@ -38,5 +38,21 @@ public int sumaDigitos(int n ){
         }
         return n%10+sumaDigitos(n/10);
     }
+
+    // Serie fibonacci
+    public int fibonacci(int n){
+        //casos base: if and else
+        //if de una sola lin
+        if(n==0) return 0;
+        if(n==1) return 1;
+        return fibonacci(n-1)+fibonacci(n-2);
+
+        /*if(n==0){
+            return 0;
+        }else if(n==1){
+            return 1;
+        }
+        return fibonacci(n-1)+fibonacci(n-2);
+        /* */} 
 }
 
